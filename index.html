@@ -122,3 +122,49 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTA V Game Launcher</title>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+    .play-button {
+      background: linear-gradient(to right, #0ff, #00f);
+      color: #fff;
+      padding: 1.5rem 3rem;
+      font-size: 2rem;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.5);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .play-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="play-button" onclick="launchGame()">▶ PLAY GAME</button>
+
+  <script>
+    function launchGame() {
+      alert("Launching GTA V-style game...");
+      window.location.href = "game.html"; // Replace with your actual game page
+    }
+  </script>
+
+</body>
+</html>
+
